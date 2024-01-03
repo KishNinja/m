@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flask</title>
+</head>
+<body>
+    <h1>Flask</h1>
+    <p>
+        - это легковесный веб-фреймворк для разработки 
+        веб-приложений на языке программирования Python. 
+        В отличие от Django, Flask предоставляет более 
+        гибкий и минималистичный подход, предоставляя 
+        основные инструменты для создания веб-приложений, 
+        но оставляя больше свободы в организации структуры 
+        проекта и выборе компонентов.
+    </p>
+    <hr />
+
+    <!-- Минимализм -->
+    <h2>Вот основные черты и возможности Flask:</h2>
+    <ul>
+        <li>
+            <p>
+                Минимализм:
+            </p>
+                <ol type="A">
+                    <li>
+                        <p>                     
+                        <strong>
+                            <em>                          
+                                Flask создан с упором на простоту и 
+                                минимализм. Он предоставляет базовый 
+                                функционал для создания веб-приложений, 
+                                и оставляет множество решений и настроек 
+                                на усмотрение разработчика.
+                            </em>
+                        </strong>  
+                        </p>
+                        <img src="https://coderlessons.com/wp-content/uploads/2019/07/creating_flask.jpg" 
+                        alt="Фото django"
+                        width="350"
+                        height="150">
+                    </li>
+                </ol>
+        </li>
+        <hr />
+
+        <!-- Маршрутизация -->
+        <li>
+            <p>
+                Маршрутизация:
+            </p>
+                <ol type="A">
+                    <li>
+                        <p>                     
+                        <strong>
+                            <em>                          
+                                Flask использует декораторы для определения 
+                                URL-маршрутов и функций-обработчиков для 
+                                обработки запросов.
+                            </em>
+                        </strong>  
+                        </p>
+                        <img src="https://foxminded.ua/wp-content/uploads/2023/10/python-frameworks-for-webdev-1024x576.jpg" 
+                        alt="Фото работы ORM (Object-Relational Mapping)"
+                        width="350"
+                        height="200">
+                    </li>
+                </ol>
+        </li>
+        <hr />
+
+        <!-- Шаблонизация -->
+        <li>
+            <p>
+                Шаблонизация:
+            </p>
+                <ol type="A">
+                    <li>
+                        <p>                     
+                        <strong>
+                            <em>                          
+                                Flask использует Jinja2 для шаблонизации, 
+                                что обеспечивает разделение логики и представления.
+                            </em>
+                        </strong>  
+                        </p>
+                        <img src="https://blog.iddqd.uk/mustpl/cover_hu905bf7997fa62c11dfde3aa08d117e40_34086_800x0_resize_q75_box.jpg" 
+                        alt="Фото работы Административная панель"
+                        width="350"
+                        height="200">
+                    </li>
+                </ol>          
+        </li>
+        <hr />
+
+        <!-- ORM (по выбору разработчика) -->
+        <li>
+            <p>
+                ORM (по выбору разработчика):
+            </p>
+                <ol type="A">
+                    <li>
+                        <p>                     
+                        <strong>
+                            <em>                          
+                                В отличие от Django, Flask 
+                                не включает в себя встроенного ORM. 
+                                Разработчик может выбрать ORM, который 
+                                предпочитает (например, SQLAlchemy).
+                            </em>
+                        </strong>  
+                        </p>
+                        <img src="data:image/jpeg;base64,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" 
+                        alt="Фото URL-маршрутизация и обработка запросов"
+                        width="350"
+                        height="200">
+                    </li>
+                </ol>      
+        </li>
+        <hr />
+
+        <!-- Расширения (Extensions)  -->
+        <li>
+            <p>
+                Расширения (Extensions)::
+            </p>
+                <ol type="A">
+                    <li>
+                        <p>                     
+                        <strong>
+                            <em>                          
+                                Flask поддерживает множество расширений 
+                                для добавления дополнительных 
+                                функциональностей, таких как аутентификация, 
+                                обработка форм, взаимодействие с базами данных и др.
+                            </em>
+                        </strong>  
+                        </p>
+                        <img src="https://learn.microsoft.com/ru-ru/visualstudio/python/media/flask/step01-new-blank-project.png?view=vs-2022" 
+                        alt="Фото Шаблоны "
+                        width="350"
+                        height="200">
+                    </li>
+                </ol>     
+        </li>
+        <hr />
+
+        <!-- Микрофреймворк -->
+        <li>
+            <p>
+                Микрофреймворк:
+            </p>
+                <ol type="A">
+                    <li>
+                        <p>                     
+                        <strong>
+                            <em>                          
+                                Flask иногда называют "микрофреймворком" 
+                                из-за своей минималистичной природы. 
+                                Он предоставляет базовый функционал, 
+                                а дополнительные возможности могут 
+                                быть добавлены по мере необходимости.
+                            </em>
+                        </strong>  
+                        </p>
+                        <img src="https://miro.medium.com/v2/resize:fit:929/1*MP4MSX2WBKZ7uQb48UXl-Q.png" 
+                        alt="Фото Middleware"
+                        width="350"
+                        height="200">
+                    </li>
+                </ol>   
+        </li>
+        <hr />
+
+        <!-- Сообщество и документация: -->
+        <li>
+            <p>
+                Сообщество и документация::
+            </p>
+                <ol type="A">
+                    <li>
+                        <p>                     
+                        <strong>
+                            <em>                          
+                                Flask также имеет активное сообщество
+                                 разработчиков и хорошо документирован.
+                            </em>
+                        </strong>  
+                        </p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ZIpqz6o0A_uPRXq_XTwuAI8-7mLXg7A3oA&usqp=CAU" 
+                        alt="Фото Безопасность"
+                        width="350"
+                        height="150">
+                    </li>
+                </ol>
+            </li>
+    </ul>
+    <hr />
+    <h4><a href="index.html">Перейти на главную страницу</a></h4>
+</body>
+</html>
